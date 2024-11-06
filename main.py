@@ -14,11 +14,11 @@ for i, ciudad in enumerate(ciudades):
     print(f"{i}: {ciudad}")
     
     if i >= limit:
-        print(f"Showing only {limit} ciudades of {len(ciudades)}")
+        print(f"Showing only {limit} ciudades of {len(ciudades)}\n")
         break
     
 personas = persona_controller.get_all()
-for persona in personas:
+for i, persona in enumerate(personas):
     print(persona)
     
     if i >= limit:
